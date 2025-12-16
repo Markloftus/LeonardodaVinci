@@ -1,1 +1,1 @@
-This folder contains the bash scripts/tool commands (Tools_Scripts_bashCommandLine Directory) as well as the python jupyter notebooks (Haplogroup_Analysis_python_notebooks Directory) used in assinging Y haplogroup lineage information to short read illumina data taken from artfacts. 
+This folder contains the bash scripts/tool commands (Tools_Scripts_bashCommandLine Directory) as well as the python jupyter notebooks (Haplogroup_Analysis_python_notebooks Directory) used in assigning Y haplogroup lineage information to short read illumina data taken from artfacts. 
