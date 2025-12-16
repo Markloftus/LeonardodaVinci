@@ -3,7 +3,6 @@ set -euo pipefail
 
 POZNIK_COORD='/projects/ch-lee-lab/USERS/loftum/leonardo/scripts/part2_variant/Poznik_2013_S1b.chrY.callable.hg38.bed'
 SAMPLEDIR='/projects/ch-lee-lab/USERS/loftum/leonardo/data'
-SAMPLEOUTDIRALNBAM='/projects/ch-lee-lab/USERS/loftum/leonardo/aln_mappings'
 SAMPLEOUTDIRMEMBAM='/projects/ch-lee-lab/USERS/loftum/leonardo/mem_mappings'
 SAMPLEOUTDIRMEM='/projects/ch-lee-lab/USERS/loftum/leonardo/mem_variants'
 REF='/projects/ch-lee-lab/HGSVC/chrY_paper_data/HHU/references/T2T_chm13_122XM_GRCh38-chrY.fasta'
