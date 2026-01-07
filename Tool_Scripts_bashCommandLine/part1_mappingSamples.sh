@@ -7,7 +7,7 @@ REF='/projects/ch-lee-lab/HGSVC/chrY_paper_data/HHU/references/T2T_chm13_122XM_G
 
 mkdir -p "$SAMPLEOUTDIRMEM"
 
-# Derive sample name from first arg: expects something like SR-0008_human_R1.fastq
+# Derive sample name from first arg
 in="$1"
 FILENAME=$(basename "$in" | awk -F"_human" '{print $1}')
 
@@ -20,7 +20,7 @@ R1="$SAMPLEDIR/${FILENAME}_human_R1.repair.fastq"
 R2="$SAMPLEDIR/${FILENAME}_human_R2.repair.fastq"
 SINGLETONS="$SAMPLEDIR/${FILENAME}_human_singletons.fastq"
 
-### REPAIR THE FASTQ FILES (only if not already repaired)
+### REPAIR THE FASTQ FILES
 if [[ ! -f "$R1" || ! -f "$R2" ]]; then
     echo "Running repair.sh for $FILENAME..."
     repair.sh \
@@ -63,7 +63,6 @@ if [[ ! -f "$OUT_BAMMEMD" ]]; then
     samtools index "$OUT_BAMMEMD"
     samtools flagstat "$OUT_BAMMEMD" > "$OUT_FLAGSTATMEM"
 
-    # optional cleanup
     rm -f "$TMP_NAME" "$TMP_FIX" "$OUT_BAMMEM"
 else
     echo "BWA-MEM deduped BAM exists for $FILENAME, skipping MEM mapping."
