@@ -4,7 +4,7 @@ This repository contains the bash scripts/tool commands (Tools_Scripts_bashComma
 
 <h3>Tools_Scripts_bashCommandLine</h3></br>
 - part1_mappingSamples.sh: Paired short-read data was mapped using BWA MEM to the T2T CHM13 human genome, the Y chromosome was replaced with the GRCh38 Y chromosome. This was done so we could use that coordinate space.</br>
-- part2_callVariants.sh: bcftools mpileup was used against the Poznik Y callable regions. SNVs 5 bases from INDELs were removed from the analysis. INDEL records are filtered in python notebooks.</br>
+- part2_callVariants.sh: bcftools mpileup was used against the Poznik Y callable regions. SNVs 5 bases from INDELs were removed from the analysis. Base quality (Phred) scores must be 20 or greater and INDEL records are filtered in python notebooks.</br>
 
 <h3>Haplogroup_Analysis_python_notebooks</h3>
 - variants_part1_read_vcfs.ipynb: Code used to compare the variant calls to the ISOGG database of Y haplogroup markers. Produces CSV files containing ancestral and derived Y haplogroup SNV counts. </br>
