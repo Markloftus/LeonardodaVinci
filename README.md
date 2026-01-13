@@ -1,6 +1,6 @@
 <h2>Leonardo da Vinci Y Haplogroup Analysis Code</h2><br/>
 <p align="center">
-<img src="HolyChild.jpeg?raw=true" width="350" height="350">
+<img src="HolyChild.jpg?raw=true" width="350" height="350">
 </p>
 
 This repository contains the bash scripts/tool commands (Tools_Scripts_bashCommandLine Directory) as well as the python jupyter notebooks (Haplogroup_Analysis_python_notebooks Directory) used in assigning Y haplogroup lineage information to short read illumina data taken from artifacts. </br>
