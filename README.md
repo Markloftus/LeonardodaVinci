@@ -11,4 +11,7 @@ This repository contains the bash scripts/tool commands (Tools_Scripts_bashComma
 
 <h3>Haplogroup_Analysis_python_notebooks</h3>
 - variants_part1_read_vcfs.ipynb: Code used to compare the variant calls to the ISOGG database of Y haplogroup markers. Produces CSV files containing ancestral and derived Y haplogroup SNV counts. </br>
-- variants_part2_visualize_data.ipynb: Python code to visualize/cluster artifact Y haplogroup derived SNV profiles (this code doesn't affect any results its simply to aid in visualization of the data in some informative way). 
+- variants_part2_visualize_data.ipynb: Python code to visualize/cluster artifact Y haplogroup derived SNV profiles (this code doesn't affect any results its simply to aid in visualization of the data in some informative way). </br>
+
+<h3>Log</h3>
+*Jan 13, 2026: Updated the repository README to make it easier for visitors to understand before submission. Made some slight polishes to the python notebooks (no results change). Fixed part2_callVariants.sh to reflect we used mapping quality threshold of 20 (not 5). We used 5 as a test afterward to see if lowering the mapping quality would provide additional markers to analyze but it did not. I forgot to change that back in the script code when sharing but the files we use are based on a -q of 20. 
