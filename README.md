@@ -1,5 +1,5 @@
 <h2>Leonardo da Vinci Y Haplogroup Analysis Code</h2><br/>
-<p align="left">
+<p align="center">
 <img src="HolyChild.jpg?raw=true" width="300" height="350">
 </p>
 
