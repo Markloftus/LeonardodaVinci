@@ -16,7 +16,7 @@ bcftools mpileup \
   -R "$POZNIK_COORD" \
   -f "$REF" \
   -C 0 \
-  -q 5 \
+  -q 20 \
   -Q 20 \
   -a FORMAT/DP,FORMAT/AD,FORMAT/ADF,FORMAT/ADR,INFO/AD,INFO/ADF,INFO/ADR \
   "$SAMPLEOUTDIRMEMBAM/$FILE" \
