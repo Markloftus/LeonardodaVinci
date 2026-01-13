@@ -11,11 +11,6 @@ in="$1"
 FILENAME=$(basename "$in" | awk -F".sorted." '{print $1}')
 FILE=$(basename "$in")
 
-
-#SAMTOOLS
-#samtools coverage -o "$SAMPLEOUTDIRMEMBAM/$FILENAME.coverage.txt" "$SAMPLEOUTDIRMEMBAM/$FILE"
-#samtools depth -a "$SAMPLEOUTDIRMEMBAM/$FILE" > "$SAMPLEOUTDIRMEMBAM/$FILENAME.depth.txt"
-
 bcftools mpileup \
   --threads 16 \
   -R "$POZNIK_COORD" \
@@ -42,7 +37,3 @@ bcftools filter \
   "$SAMPLEOUTDIRMEM/$FILENAME.map5.vcf.gz"
 
 #indels get removed with python after
-#bcftools view \
-#  -Ov \
-#  -o "$SAMPLEOUTDIRMEM/$FILENAME.sg5.woINDEL.vcf.gz" \
-#  "$SAMPLEOUTDIRMEM/$FILENAME.sg5.vcf.gz"
